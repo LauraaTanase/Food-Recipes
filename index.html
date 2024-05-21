@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food-recipes</title>
+    <title>Food Recipes</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,253 +11,177 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-  </head>
-  <body>
-    <!--Header-->
-    <header>
-      <h1>Pinch of yum</h1>
-      <p>Come and discover new recipes that will blow your tastes</p>
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-center my-4">
+        <h1>Pinch of Yum</h1>
+        <p>Come and discover new recipes that will blow your taste buds</p>
     </header>
-    <!--Nav-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <a class="navbar-brand" href="#">All</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Meat</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Seafood</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Bakery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vegetarian</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Snacks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dessert</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Beverages</a>
-          </li>
-        </ul>
-      </div>
+    
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">All</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Meat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Seafood</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bakery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vegetarian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Snacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beverages</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <!--Div container fluid-3 columns -->
-
-    <div class="container-fluid">
-      <div class="row row-cols-3">
-        <div class="col left-sidebar">
-          <div
-            class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary"
-            style="width: 380px"
-          >
-            <a
-              href="#"
-              class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
-             
-                <h3>Recipes you should try</h3>
-              
-            </a>
-            <div class="list-group list-group-flush border-bottom scrollarea">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action py-3 lh-sm"
-              >
-                <div
-                  class="d-flex w-100 align-items-center justify-content-between"
-                >
-                  <img
-                    src="assets/pumpkin soup.jpg"
-                    alt="pumpkin soup"
-                    width="120px"
-                  />
+    
+    <!-- Container with 3 columns -->
+    <div class="container-fluid my-4">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-md-3">
+                <div class="d-flex flex-column bg-light p-3">
+                    <h3>Recipes You Should Try</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/pumpkin_soup.jpg" alt="Pumpkin Soup" width="120">
+                                <div class="ms-3">
+                                    <h5>Creamy Roasted Pumpkin Soup</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/grilled_salmon.jpg" alt="Grilled Salmon" width="120">
+                                <div class="ms-3">
+                                    <h5>Grilled Salmon with Mashed Potatoes and Veggies</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/chicken_and_veggies.jpg" alt="Chicken and Veggies" width="120">
+                                <div class="ms-3">
+                                    <h5>Grilled Chicken with Veggies</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/skewers_w_salad.jpg" alt="Skewers with Salad" width="120">
+                                <div class="ms-3">
+                                    <h5>Grilled Skewers with Chef's Salad</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/bagels.jpg" alt="Bagels" width="120">
+                                <div class="ms-3">
+                                    <h5>Bagels with Salmon</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/bread.jpg" alt="Milk Bread" width="120">
+                                <div class="ms-3">
+                                    <h5>Milk Bread with Wheat and White Flour</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-10 mb-1 small">
-                  <strong><h5>Creamy roasted pumpkin soup</h5></strong>
-                </div>
-              </a>
-
-              <a
-                href="#"
-                class="list-group-item list-group-item-action py-3 lh-sm"
-              >
-                <div
-                  class="d-flex w-100 align-items-center justify-content-between"
-                >
-                  <img
-                    src="/Food-Recipes/assets/grilled-salmon.jpg"
-                    alt="grilled-salmon"
-                    width="120px"
-                  />
-                </div>
-                <div class="col-10 mb-1 small">
-                  <strong
-                    ><h5>
-                      Grilled salmon with mashed potatoes and veggies
-                    </h5></strong
-                  >
-                </div>
-              </a>
-              <a
-                href="#"
-                class="list-group-item list-group-item-action py-3 lh-sm"
-              >
-                <div
-                  class="d-flex w-100 align-items-center justify-content-between"
-                >
-                  <img
-                    src="assets/chicken and veggies.jpg"
-                    alt="chicken and veggies"
-                    width="120px"
-                  />
-                </div>
-                <div class="col-10 mb-1 small">
-                  <strong><h5>Grilled chicken with veggies</h5></strong>
-                </div>
-              </a>
-              <a
-              href="#"
-              class="list-group-item list-group-item-action py-3 lh-sm"
-            >
-              <div
-                class="d-flex w-100 align-items-center justify-content-between"
-              >
-                <img
-                  src="assets/Skewers w salad.jpg"
-                  alt="skewers w salad"
-                  width="120px"
-                />
-              </div>
-              <div class="col-10 mb-1 small">
-                <strong><h5>Grilled skewers with chef's salad</h5></strong>
-              </div>
-            </a>
-             
-            <a
-            href="#"
-            class="list-group-item list-group-item-action py-3 lh-sm"
-          >
-            <div
-              class="d-flex w-100 align-items-center justify-content-between"
-            >
-              <img
-                src="assets/bagels.jpg"
-                alt="bagels"
-                width="120px"
-              />
             </div>
-            <div class="col-10 mb-1 small">
-              <strong><h5>Bagels with salmon</h5></strong>
-            </div>
-          </a>
-          <a
-          href="#"
-          class="list-group-item list-group-item-action py-3 lh-sm"
-        >
-          <div
-            class="d-flex w-100 align-items-center justify-content-between"
-          >
-            <img
-              src="assets/bread.jpg"
-              alt="milk bread"
-              width="120px"
-            />
-          </div>
-          <div class="col-10 mb-1 small">
-            <strong><h5>Milk bread with wheat and white flour</h5></strong>
-          </div>
-        </a>
             
+            <!-- Feed -->
+            <div class="col-md-6">
+                <h3>Feed</h3>
+                <!-- Your feed content goes here -->
             </div>
-          </div>
-        </div>
-        <div class="col">Feed</div>
-        <div class="col right-sidebar">
-          <h3>Just Released</h3>
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Cabbage rolls with ground beef and pork</h5>
-  
-              </div>
-              <p class="mb-1">The cabbage roll is a staple in the Romanian cuisine with variations of the recipe and sizing depending on the region. Traditionally made with pork, beef, bacon, rice, spices and aromatics, broiled in a tomato sauce and served with polenta, sour cream and spicy pickled peppers.</p>
-              <small class="text-body-secondary">15 May 2024</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Butter chicken with basmati rice</h5>
-              </div>
-              <Delicious class="mb-1">Delicious restaurant-style butter chicken made right at home with simple ingredients. This recipe is exactly how they make butter chicken in restaurants – and I’ve had people tell me it’s actually better! Trust me when I say it’s finger-lickin’ good!</p>
-              <small class="text-body-secondary">30 April 2024</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Mac and cheese</h5>
-              </div>
-              <p class="mb-1">If you’re used to eating mac and cheese from a box, get ready. This homemade macaroni and cheese is on a totally different level.</p>
-              <small class="text-body-secondary">25 April 2024</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Curry fried rice</h5>
-              </div>
-              <p class="mb-1">This curry fried rice is packed with flavor and cooks up in minutes! Studded with tender-crisp veggies, this easy vegan dish is better than takeout and makes an excellent side or main.</p>
-              <small class="text-body-secondary">20 April 2024</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Steak fajitas</h5>
-              </div>
-              <p class="mb-1">There’s a reason heads turn when the plate of fajitas walks out the kitchen door at a restaurant. This sizzlingly savory dish hits all the right Southwestern flavors and can serve a crowd along with a basket of warm tortillas.</p>
-              <small class="text-body-secondary">18 April 2024</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">NY Strip Steaks</h5>
-              </div>
-              <p class="mb-1">If you’re looking for the perfect way to prepare a couple of NY strip steaks, start with this recipe from Tyler Florence. After an initial sear in a hot skillet, the steaks based in a combination of butter and thyme for maximum flavor.</p>
-              <small class="text-body-secondary">15 April 2024</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Ground beef tacos</h5>
-              </div>
-              <p class="mb-1">Whip up a family favorite: old-school Tex-Mex beef tacos with crispy shells, juicy seasoned beef, and everyone’s favorite toppings!</p>
-              <small class="text-body-secondary">13 April 2024</small>
-            </a>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Subscribe to our newsletter</h5>
-            <p class="card-text">Monthly digest of what's new and tasty from us..</p>
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address"><br>
-              <button class="btn btn-primary" type="button">Subscribe</button>
+            
+            <!-- Right Sidebar -->
+            <div class="col-md-3">
+                <h3>Just Released</h3>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Cabbage Rolls with Ground Beef and Pork</h5>
+                        <p class="mb-1">The cabbage roll is a staple in Romanian cuisine with variations of the recipe depending on the region...</p>
+                        <small>15 May 2024</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Butter Chicken with Basmati Rice</h5>
+                        <p class="mb-1">Delicious restaurant-style butter chicken made right at home with simple ingredients...</p>
+                        <small>30 April 2024</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Mac and Cheese</h5>
+                        <p class="mb-1">If you’re used to eating mac and cheese from a box, get ready. This homemade macaroni and cheese is on a totally different level...</p>
+                        <small>25 April 2024</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Curry Fried Rice</h5>
+                        <p class="mb-1">This curry fried rice is packed with flavor and cooks up in minutes...</p>
+                        <small>20 April 2024</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Steak Fajitas</h5>
+                        <p class="mb-1">There’s a reason heads turn when the plate of fajitas walks out the kitchen door at a restaurant...</p>
+                        <small>18 April 2024</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">NY Strip Steaks</h5>
+                        <p class="mb-1">If you’re looking for the perfect way to prepare a couple of NY strip steaks, start with this recipe...</p>
+                        <small>15 April 2024</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Ground Beef Tacos</h5>
+                        <p class="mb-1">Whip up a family favorite: old-school Tex-Mex beef tacos with crispy shells...</p>
+                        <small>13 April 2024</small>
+                    </a>
+                </div>
             </div>
         </div>
-        </footer>
-      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <h5 class="card-title">Subscribe to our newsletter</h5>
+        <p class="card-text">Monthly digest of what's new and tasty from us.</p>
+        <form class="d-flex justify-content-center">
+            <input id="newsletter1" type="email" class="form-control w-25" placeholder="Email address" required>
+            <button class="btn btn-primary ms-2" type="submit">Subscribe</button>
+        </form>
+    </footer>
+    
    
-  </body>
+</body>
 </html>
